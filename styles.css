@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+}
+.box{
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    border: 7px solid #000;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#b1{
+    background-color: aqua;
+}
+#b2{
+    background-color: cadetblue;
+}
+#b3{
+    background-color: crimson;
+}
+#b4{
+    background-color: darkcyan;
+}
+.flash{
+    background-color: #fff !important;
+    transform: scale(1.02);
+}
+.userflash{
+    background-color: #0ae01c !important;
+    transform: scale(1.02);
+}
