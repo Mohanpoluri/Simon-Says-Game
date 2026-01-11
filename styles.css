@@ -13,16 +13,16 @@ body{
     justify-content: center;
 }
 #b1{
-    background-color: aqua;
+    background-color: #C5D89D;
 }
 #b2{
-    background-color: cadetblue;
+    background-color: #4B9DA9;
 }
 #b3{
-    background-color: crimson;
+    background-color: #ED985F;
 }
 #b4{
-    background-color: darkcyan;
+    background-color: #FFF57E;
 }
 .flash{
     background-color: #fff !important;
@@ -31,4 +31,8 @@ body{
 .userflash{
     background-color: #0ae01c !important;
     transform: scale(1.02);
+}
+#high-score{
+    font-weight: bold;
+    margin-top: 5px;
 }

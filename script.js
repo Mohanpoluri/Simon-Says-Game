@@ -4,6 +4,8 @@ let prevClicks = [];
 let started = false;
 let level = 0;
 let h3 = document.querySelector("h3");
+let highScore = localStorage.getItem("highScore") || 0;
+let highScoreText = document.querySelector("#high-score");
 
 document.addEventListener("keydown", (event) => {
     if (!started) {
@@ -17,6 +19,14 @@ function levelUp() {
     level++;
     h3.innerText = `Level ${level}`;
 
+
+
+    if (level > highScore) {
+        highScore = level;
+        localStorage.setItem("highScore", highScore);
+        highScoreText.innerText = `Highest Score: ${highScore}`;
+    }
+    
     let ranNum = Math.floor(Math.random() * btns.length);
     let ranBtn = btns[ranNum];
     let btn = document.querySelector(`#${ranBtn}`);
@@ -65,5 +75,7 @@ function checkAns() {
          prevClicks = [];
          started = false;
          level = 0;
+
+         
     }
 }
